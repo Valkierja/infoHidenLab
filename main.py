@@ -15,6 +15,7 @@ def cropImg(img):
     cropped.save("./test_result1.png")
 
 
+
 def rotateImg(img: PIL.Image):
     rotated = img.rotate(90)
     rotated.save("./test_result2.png")
