@@ -5,7 +5,7 @@ from PIL import Image, ImageFilter
 
 
 def openImg():
-    img = Image.open("./test.png")
+    img = Image.open("test.png")
     print(img.size)
     return img
 
