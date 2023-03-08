@@ -7,6 +7,7 @@ def binary(threshold: int, path: str):
     Lim = im.convert("L")
     Lim.save("test_grey.png")
 
+
     # threshold = 200
     # threshold = 80
 
