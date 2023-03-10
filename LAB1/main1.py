@@ -1,9 +1,9 @@
 # 这是一个示例 Python 脚本。
 import PIL
+import cv2
 from PIL import Image, ImageFilter
 from skimage.metrics import mean_squared_error as compare_mse
 from skimage.metrics import peak_signal_noise_ratio as compare_psnr
-import cv2
 
 
 def openImg():
