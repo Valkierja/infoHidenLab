@@ -41,7 +41,6 @@ def generate_Red_Green():
         step = random.randint(1, 5)
         loopDraw(image, counter, step, green_pixTuple, "TEST2_red_green.png")
         step2 = random.randint(1, 3)
-
         counter = counter + step + step2
 
 
