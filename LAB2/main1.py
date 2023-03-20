@@ -17,7 +17,6 @@ class Comunicator:
             return -1
         tempSeed = -1
         tempSeed = random.randint(0, 9)
-
         others.buff = self.privateKey ^ tempSeed
         reciv = others.processShake() ^ tempSeed
         others.processSecondShake(reciv)
@@ -47,7 +46,6 @@ class Comunicator:
         others.textBuff = buff
         print("enc: " + buff)
 
-
     def decText(self):
         if self.privateKey == -1:
             return -1
@@ -57,10 +55,11 @@ class Comunicator:
         self.textBuff = buff
         print("dec: " + self.textBuff)
 
+
 a = Comunicator()
 b = Comunicator()
 a.shakeSymKey(b)
 print(a.privateKey)
 print(b.privateKey)
-a.sendencText("abcd",b)
+a.sendencText("abcd", b)
 b.decText()
